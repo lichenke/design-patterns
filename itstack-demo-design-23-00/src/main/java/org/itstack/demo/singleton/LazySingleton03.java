@@ -1,9 +1,11 @@
 package org.itstack.demo.singleton;
 
+import java.io.Serializable;
+
 /**
  * @author LiChenke
  **/
-public class LazySingleton03 {
+public class LazySingleton03 implements Serializable {
 
     private static volatile LazySingleton03 instance;
 
@@ -19,6 +21,10 @@ public class LazySingleton03 {
                 }
             }
         }
+        return instance;
+    }
+
+    private Object readResolve() {
         return instance;
     }
 }
