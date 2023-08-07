@@ -1,4 +1,4 @@
-package org.itstack.demo.design.proxydemo.dynamicproxy;
+package org.itstack.demo.design.proxydemo.dynamicproxy.jdk;
 
 public interface ITeacher {
 
